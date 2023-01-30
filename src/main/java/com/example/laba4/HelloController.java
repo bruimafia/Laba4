@@ -39,6 +39,7 @@ public class HelloController implements Initializable {
     GraphicsContext gcCrane = canvasAnimal.getGraphicsContext2D();
     GraphicsContext gcTune = canvasAnimal.getGraphicsContext2D();
 
+    // test
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
