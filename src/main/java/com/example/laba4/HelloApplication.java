@@ -19,6 +19,7 @@ public class HelloApplication extends Application {
         stage.setTitle("Животные");
         stage.setResizable(false);
         stage.setFullScreen(false);
+        // test new
         stage.setScene(scene);
         stage.show();
     }
