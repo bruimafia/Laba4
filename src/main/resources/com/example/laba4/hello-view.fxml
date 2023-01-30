@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="472.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.laba4.HelloController">
+   <children>
+      <Button fx:id="btn_addDog" layoutX="358.0" layoutY="9.0" mnemonicParsing="false" onAction="#onAddDog" text="Добавить собаку">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="btn_addCrane" layoutX="722.0" layoutY="9.0" mnemonicParsing="false" onAction="#onAddCrane" text="Добавить журавля">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_addTuna" layoutX="550.0" layoutY="9.0" mnemonicParsing="false" onAction="#onAddTuna" text="Добавить тунца">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font>
+      </Button>
+      <Label layoutX="51.0" layoutY="55.0" text="Движение животных" textFill="#0c7919">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="329.0" layoutY="38.0" text="Начальные координаты собаки" />
+      <Label layoutX="522.0" layoutY="38.0" text="Начальные координаты тунца" />
+      <Label layoutX="704.0" layoutY="38.0" text="Начальные координаты журавля" />
+      <TextField fx:id="tf_coorXDog" layoutX="351.0" layoutY="64.0" prefHeight="25.0" prefWidth="42.0" promptText="x" />
+      <TextField fx:id="tf_coorXTuna" layoutX="529.0" layoutY="64.0" prefHeight="25.0" prefWidth="42.0" promptText="x" />
+      <TextField fx:id="tf_coorXCrane" layoutX="733.0" layoutY="64.0" prefHeight="25.0" prefWidth="42.0" promptText="x" />
+      <TextField fx:id="tf_coorYDog" editable="false" layoutX="443.0" layoutY="64.0" prefHeight="25.0" prefWidth="42.0" promptText="y" />
+      <TextField fx:id="tf_coorYTuna" layoutX="618.0" layoutY="64.0" prefHeight="25.0" prefWidth="42.0" promptText="y" />
+      <TextField fx:id="tf_coorYCrane" layoutX="815.0" layoutY="64.0" prefHeight="25.0" prefWidth="42.0" promptText="y" />
+      <Spinner fx:id="dogSpeed" layoutX="328.0" layoutY="115.0" prefHeight="25.0" prefWidth="87.0">
+      <valueFactory>
+         <SpinnerValueFactory.DoubleSpinnerValueFactory amountToStepBy="1" initialValue="2" max="5" min="1" />
+      </valueFactory>
+      </Spinner>
+      <Spinner fx:id="tunaSpeed" layoutX="574.0" layoutY="115.0" prefHeight="25.0" prefWidth="87.0">
+      <valueFactory>
+         <SpinnerValueFactory.DoubleSpinnerValueFactory amountToStepBy="2" initialValue="20" max="24" min="16" />
+      </valueFactory>
+   </Spinner>
+      <Spinner fx:id="craneSpeed" layoutX="762.0" layoutY="115.0" prefHeight="25.0" prefWidth="87.0">
+      <valueFactory>
+         <SpinnerValueFactory.DoubleSpinnerValueFactory amountToStepBy="1" initialValue="15" max="16" min="14" />
+      </valueFactory>
+   </Spinner>
+      <Label layoutX="325.0" layoutY="97.0" text="Скорость собаки" />
+      <Label layoutX="575.0" layoutY="97.0" text="Скорость тунца" />
+      <Label layoutX="764.0" layoutY="97.0" text="Скорость журавля" />
+      <Spinner fx:id="dogJump" layoutX="429.0" layoutY="115.0" prefHeight="25.0" prefWidth="87.0">
+      <valueFactory>
+         <SpinnerValueFactory.DoubleSpinnerValueFactory amountToStepBy="0" initialValue="0" max="0" min="0" />
+      </valueFactory>
+   </Spinner>
+      <Label layoutX="431.0" layoutY="97.0" text="Прыжок собаки" />
+      <Pane fx:id="pane" layoutX="25.0" layoutY="148.0" prefHeight="300.0" prefWidth="850.0" />
+   </children>
+</AnchorPane>
