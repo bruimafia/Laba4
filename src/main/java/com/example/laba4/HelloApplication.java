@@ -18,6 +18,7 @@ public class HelloApplication extends Application {
         Scene scene = new Scene(fxmlLoader.load());
         stage.setTitle("Животные");
         stage.setResizable(false);
+        stage.setFullScreen(false);
         stage.setScene(scene);
         stage.show();
     }
